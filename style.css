@@ -42,3 +42,42 @@ nav ul li a {
 .header-content {
     padding: 50px;
 }
+
+.header-content h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.header-content p {
+    font-size: 1.2em;
+}
+
+.btn {
+    display: inline-block;
+    background: orangered;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 40px 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 40px 0;
+}
+
+footer {
+    background: #333;
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px 0;
+}
