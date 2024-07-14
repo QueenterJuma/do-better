@@ -2,17 +2,20 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
 }
 
 /* Header */
 header {
     background: url('/images/header-background.jpg') no-repeat center center/cover;
-    color: white;
-    padding: 20px;
+    color: #f4f3f9;
     text-align: center;
+    position: relative;
 }
 
 .navbar {
+    background-color: rgba(75, 74, 76, 0.7);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,7 +29,6 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    background-color: ;
     margin: 0;
     padding: 0;
 }
@@ -36,12 +38,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: whitesmoke;
+    color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .header-content {
-    padding: 50px;
+    padding: 100px 20px;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .header-content h1 {
@@ -51,6 +55,8 @@ nav ul li a {
 
 .header-content p {
     font-size: 1.2em;
+    color: #f1f1f1;
+    margin: 20px 0;
 }
 
 .btn {
@@ -61,6 +67,11 @@ nav ul li a {
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: darkred;
 }
 
 main {
@@ -69,18 +80,25 @@ main {
 
 section {
     margin: 40px 0;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
 }
 
 h2 {
     text-align: center;
-    margin: 40px 0;
+    margin-bottom: 20px;
+    color: #444;
+    font-size: 2em;
 }
 
 footer {
     background: #333;
     color: whitesmoke;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
+    margin-top: 40px;
 }
 
 /* Dropdown style */
@@ -92,21 +110,23 @@ footer {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: #3030c2;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    border-radius: 5px;
 }
 
 .dropdown-content a {
-    color: black;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .dropdown:hover .dropdown-content {
@@ -117,3 +137,26 @@ footer {
     background-color: orange;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    
+    .header-content {
+        padding: 50px 20px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .btn {
+        padding: 15px 30px;
+    }
+}
