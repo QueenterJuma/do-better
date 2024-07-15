@@ -9,9 +9,11 @@ body {
 /* Header */
 header {
     background: url('/images/header-background.jpg') no-repeat center center/cover;
+    /* background-size:cover ; */
     color: #f4f3f9;
     text-align: center;
     position: relative;
+    /* background-position: ; */
 }
 
 .navbar {
@@ -20,6 +22,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    
 }
 
 .logo {
@@ -71,25 +74,25 @@ nav ul li a {
 }
 
 .btn:hover {
-    background: darkred;
+    background: rgba(197, 4, 4, 0.814);
 }
 
 main {
-    padding: 20px;
+    padding: 5rem;
 }
 
 section {
     margin: 40px 0;
-    padding: 20px;
+    padding: 2rem;
     background: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #444;
+    color: #c50808e7;
     font-size: 2em;
 }
 
@@ -130,6 +133,14 @@ img:hover {
     max-height: 300px;
     width: 100%;
     height: auto;
+}
+
+.text-box {
+    background: #f73939;
+    border: 2px solid #f87171;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 footer {
